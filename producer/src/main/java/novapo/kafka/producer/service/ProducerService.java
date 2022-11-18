@@ -1,10 +1,10 @@
-package novapo.kafka.producer.service.dto;
+package novapo.kafka.producer.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import novapo.kafka.producer.service.dto.SendMessageDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -17,10 +17,11 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 @NoArgsConstructor
 public class ProducerService {
 
-    private final String topicName="topic_demo";
+    private final String topicName = "topic_demo";
 
     @Autowired
     private KafkaTemplate kafkaTemplate;
+
     public String sendMessage(SendMessageDTO message) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         String msg = objectMapper.writeValueAsString(message);
@@ -38,6 +39,7 @@ public class ProducerService {
                 System.out.println("Sent message=[" + message +
                         "] with offset=[" + result.getRecordMetadata().offset() + "]");
             }
+
             @Override
             public void onFailure(Throwable ex) {
                 System.out.println("Unable to send message=["
