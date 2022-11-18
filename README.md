@@ -40,7 +40,7 @@ services:
 
 *Nguồn: [Apache Kafka packaged by Bitnami](https://hub.docker.com/r/bitnami/kafka)*
 
-### **2. DOWNLOAD KAFKA MAZIC **
+### **2. DOWNLOAD KAFKA MAZIC**
 
 
 > **[Kafka Mazic](https://www.kafkamagic.com/)** là **GUI Tool** dùng để làm việc với **Apache Kafka**. Chúng ta có thể tạo và quản lý các **topic**, ngoài ra có thể xem, tìm kiếm, gửi và nhận **message** giữa các topic.
