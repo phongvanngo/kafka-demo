@@ -47,4 +47,8 @@ services:
 
 Link Tải [Download Kafka Mazic](https://www.kafkamagic.com/download/)
 
+Sau khi tải, giải nén Zip, chạy file **KafkMazic** và truy cập vào [localhost:5000](http://localhost:5000)
+
+### **3. DOWNLOAD SOURCE CODE AND RUN**
+
 
