@@ -2,6 +2,8 @@
 
 ![](https://cdn.confluent.io/wp-content/uploads/incompatible-serializers-and-deserializers-2048x637.png)
 
+![](https://developers.redhat.com/sites/default/files/saga.png)
+
 
 ## Cài Đặt Và Chạy
 
@@ -45,9 +47,11 @@ services:
 
 > **[Kafka Mazic](https://www.kafkamagic.com/)** là **GUI Tool** dùng để làm việc với **Apache Kafka**. Chúng ta có thể tạo và quản lý các **topic**, ngoài ra có thể xem, tìm kiếm, gửi và nhận **message** giữa các topic.
 
-Link Tải [Download Kafka Mazic](https://www.kafkamagic.com/download/)
+1. Download tại [Download Kafka Mazic](https://www.kafkamagic.com/download/)
 
-Sau khi tải, giải nén Zip, chạy file **KafkMazic** và truy cập vào [localhost:5000](http://localhost:5000)
+2. Sau khi tải, giải nén Zip, chạy file **KafkMazic** và truy cập vào [localhost:5000](http://localhost:5000)
+
+3. Tạo mới một Cluster
 
 ### **3. DOWNLOAD SOURCE CODE AND RUN**
 

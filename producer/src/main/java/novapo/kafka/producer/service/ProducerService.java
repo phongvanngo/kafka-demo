@@ -29,9 +29,11 @@ public class ProducerService {
         return "Successfully";
     }
 
-    public String sendMessageWithHandlingResponse(String message) {
+    public String sendMessageWithHandlingResponse(SendMessageDTO message) throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        String msg = objectMapper.writeValueAsString(message);
         ListenableFuture<SendResult<String, String>> future =
-                kafkaTemplate.send(topicName, message);
+                kafkaTemplate.send(topicName, msg);
 
         future.addCallback(new ListenableFutureCallback<SendResult<String, String>>() {
             @Override
