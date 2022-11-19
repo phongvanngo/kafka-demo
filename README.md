@@ -1,4 +1,4 @@
-# **USING KAFKA IN MICROSERVICES** 
+# **USE KAFKA IN MICROSERVICES** 
 
 ![](https://cdn.confluent.io/wp-content/uploads/incompatible-serializers-and-deserializers-2048x637.png)
 
